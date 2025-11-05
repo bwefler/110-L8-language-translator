@@ -8,6 +8,8 @@ translations = {
   "baby":"bebé",
   "grandson":"nieto",
   "granddaughter":"nieta",
+  "dog":"perro",
+  "cat":"gato"
 }
 
 done = False
@@ -18,7 +20,7 @@ while not done:
   if (word == "done"):
     done = True
   elif (word.lower() in translations):
-    print ('The Spanish word is "' + translations.pop(word) + '"')
+    print ('The Spanish word is "' + translations.get(word) + '"')
   else:
     print ("Word not listed in dictionary")
 
